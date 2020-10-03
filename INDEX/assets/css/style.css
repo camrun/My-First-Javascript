@@ -1,0 +1,81 @@
+/* Website Copyright © Bradley Reece 2019 - All Rights Reserved */
+/* Scaling implemented by Jack Puttock (jackputtock.com) */
+
+html, body {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  /* Prevents selection of images - interacting with the particles could select elements if fast enough. */
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: -moz-none;
+  -o-user-select: none;
+  user-select: none;
+}
+
+#particles-js {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  background-image: url("");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+  background-attachment: fixed !important;
+  background: #393939;
+  z-index: -1;
+}
+
+.particles-container {
+  width: 100%;
+  height: 100vh;
+  text-align: center;
+  position: absolute;
+  z-index: 999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.particles-container #logo {
+  height: 100%;
+  width: 35vh;
+  position: relative;
+}
+
+.particles-container .icons {
+  position: relative;
+  margin-top: 5vh;
+}
+
+.particles-container .icons i {
+  font-size: 1.75em;
+  color: #FFFFFF;
+  text-align: center;
+  margin: 10px;
+}
+
+p {
+  /* Permits text selection, though there isn't any present in the current iteration. */
+  -webkit-user-select: text;
+  -khtml-user-select: text;
+  -moz-user-select: text;
+  -o-user-select: text;
+  user-select: text;
+}
+
+/* Responsive (Mobile, Tablet, etc) */
+@media (max-width: 450px) {
+  .particles-container #logo {
+    width: 70vw !important;
+  }
+}
